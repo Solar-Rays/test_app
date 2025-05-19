@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Sidebar';
+import MainContent from './MainContent'
+import metadata from './metadata';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='content'>
+        <Sidebar name={metadata[0].name} age={metadata[0].age} gender={metadata[0].gender} height={metadata[0].height} />
+        <MainContent />
+      </div>
+
     </div>
   );
 }
