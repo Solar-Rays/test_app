@@ -1,15 +1,17 @@
-import React from 'react'
-import metadata from './metadata.js'
+import './sidebar.css'
+import image1 from './Assets/Image_1.jpg'
 
-
-function Sidebar (props) {
+function Sidebar(props) {
     return (
-        <div>
-            <img src="./Assets/Image_1.jpg" alt="Image 1" width="100px"/>
-            <p>Name: {props.name}</p>
-            <p>Age: {props.age}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Height: {props.height}</p>
+        <div className='sidebar'>
+            <div className='profile-container'>
+                <img src={image1} alt="Image 1"/>
+                <div className="profile-info"><p>Name: </p><span>{props.name}</span></div>
+                <div className="profile-info"><p>Age: </p><span>{props.age}</span></div>
+                <div className="profile-info"><p>Gender: </p><span>{props.gender}</span></div>
+                <div className="profile-info"><p>Height: </p><span>{props.height}</span></div>
+            </div>
+            <div></div>
         </div>
     )
 }

@@ -7,7 +7,16 @@ function App() {
   return (
     <div className="App">
       <div className='content'>
-        <Sidebar name={metadata[0].name} age={metadata[0].age} gender={metadata[0].gender} height={metadata[0].height} />
+        {metadata.map((value) => {
+          return (
+            <Sidebar
+              name={value.name}
+              age={value.age}
+              gender={value.gender}
+              height={value.height}
+            />)
+        })}
+
         <MainContent />
       </div>
 
