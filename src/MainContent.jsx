@@ -16,7 +16,7 @@ function MainContent() {
             <h1>About Me</h1>
             <div className='main-info'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero consequatur sit reprehenderit impedit vel deleniti aperiam quia eveniet voluptas. Aliquam omnis nam veritatis similique. Fuga a dicta inventore necessitatibus?</p>
-                <img src={defaultImage ? image2 : image3} alt="" width="100px" />
+                <img src={defaultImage ? image2 : image3} alt="carousel" width="100px" />
             </div>
             <p onClick={changeImage} className="change-btn">Change Image</p>
         </div>
