@@ -21,6 +21,7 @@ img {
     .content {
         width: 90%;
         height: 70%;
+        min-height: fit-content;
         display: flex;
         justify-content: space-evenly;
         align-items: center;

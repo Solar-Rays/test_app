@@ -32,13 +32,17 @@
 @media screen and (min-width: 765px) {
     .sidebar {
         height: 100%;
+        min-height: fit-content;
         border-radius: 10px 0 0 10px;
         display: flex;
+        align-items: center;
         max-width: 40%;
     }
 
     .profile-container {
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
     }
-    
 }
