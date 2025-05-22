@@ -23,8 +23,10 @@ h1 {
 }
 
 .main-info > img {
-    height: 12em;
-    width: auto;
+    height: auto;
+    width: 35%;
+    /* min-width: 8em; */
+    max-width: 10em;
     margin: .5em 1em .5em .5em;
 }
 
@@ -35,4 +37,14 @@ h1 {
     border-radius: 5px;
     width: max-content;
     cursor: pointer;
+}
+
+@media screen and (min-width: 765px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: max-content;
+        max-height: 15em;
+    }
 }
