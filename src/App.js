@@ -10,6 +10,7 @@ function App() {
         {metadata.map((value) => {
           return (
             <Sidebar
+              key={value.id}
               name={value.name}
               age={value.age}
               gender={value.gender}

@@ -1,5 +1,4 @@
 import './sidebar.css'
-import image1 from './Assets/Image_1.jpg'
 import image3 from './Assets/Image_3.jpg'
 
 function Sidebar(props) {
